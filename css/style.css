@@ -1,0 +1,28 @@
+/* colores principales */
+
+/* rgb(27, 166, 189)  celeste mas claro, principal*/
+/* rgb(2, 150, 178) celeste mas oscuro, secundario */
+/* rgb(2, 99, 202) azul 
+/* rgb(255, 255, 255) hsl(0, 0%, 100%) blanco */
+
+/* Variables de color */
+:root {
+    --primary-color: rgb(27, 166, 189); /* Celeste claro */
+    --secondary-color: rgb(2, 150, 178); /* Celeste oscuro */
+    --tertiary-color: rgb(2, 99, 202); /* Azul */
+    --font-color: #333; /* Gris oscuro */
+}
+
+.navbar-nav .nav-link {
+    color:  var(--primary-color);
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+
+.navbar-nav .nav-link:hover {
+    color:  var(--secondary-color);
+}
+
+nav {
+    background-color: rgb(255, 251, 251);
+}
