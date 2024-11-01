@@ -10,6 +10,8 @@
     --primary-color: rgb(27, 166, 189); /* Celeste claro */
     --secondary-color: rgb(2, 150, 178); /* Celeste oscuro */
     --tertiary-color: rgb(2, 99, 202); /* Azul */
+    --complementary-color: rgb(77, 182, 172); /* Verde Agua */
+    --complementary-color-2: rgb(0, 70, 112); /* Azul Marino */
     --font-color: #333; /* Gris oscuro */
 }
 
@@ -26,4 +28,33 @@
 
 nav {
     background-color: rgb(255, 251, 251);
+}
+
+.hero {
+    /* border: 5px red solid; */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-section {
+    /* Additional styling for left section if needed */
+    background-color: var(--complementary-color);;
+}
+
+.right-section {
+    /* Additional styling for right section if needed */
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/hero-bg.png');
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: black;
 }
