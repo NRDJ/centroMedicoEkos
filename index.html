@@ -9,59 +9,67 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand me-5" href="#">
+            <img src="assets/images/logo2.png" alt="Logo" width="70rem">
+        </a>
+    <!-- Toggler for smaller screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- You can customize the toggler icon here -->
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="me-3 nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="me-3 nav-item">
+            <a class="nav-link" href="#servicios">Servicios</a>
+        </li>
+        <!-- <li class="me-3 nav-item">
+            <a class="nav-link" href="#">Profesionales</a>
+        </li> -->
+        <li class="me-3 nav-item">
+            <a class="nav-link" href="#agendar">Agendar hora</a>
+        </li>
+        <li class="me-3 nav-item">
+            <a class="nav-link" href="#ubicacion">Ubicación</a>
+        </li>
+        <!-- <li class="me-3 nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+        </li>
+        <li class="me-3 nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+        </li> -->
+        <li class="me-3 nav-item">
+            <a class="nav-link" href="#">Registro</a>
+        </li>
+        <li class="me-3 nav-item">
+            <a class="nav-link" href="#">Ingreso</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+    </nav>
     <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand me-5" href="#">
-                <img src="assets/images/logo2.png" alt="Logo" width="70rem">
-            </a>
-        <!-- Toggler for smaller screens -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- You can customize the toggler icon here -->
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="me-3 nav-item">
-                <a class="nav-link" href="#">Inicio</a>
-            </li>
-            <li class="me-3 nav-item">
-                <a class="nav-link" href="#servicios">Servicios</a>
-            </li>
-            <li class="me-3 nav-item">
-                <a class="nav-link" href="#">Profesionales</a>
-            </li>
-            <li class="me-3 nav-item">
-                <a class="nav-link" href="#">Agendar hora</a>
-            </li>
-            <li class="me-3 nav-item">
-                <a class="nav-link" href="#">Ubicación</a>
-            </li>
-            <li class="me-3 nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
-            </li>
-            </ul>
-        </div>
-        </div>
-        </nav>
         <!-- Hero section -->
         <div class="hero">
             <div class="container-fluid h-100">
-              <div class="row h-100">
-                <div class="col-md-6 d-flex flex-column justify-content-center left-section">
-                  <h1 class="text-white">Bienvenido a Ekos</h1>
-                  <a href="#services" class="btn btn-primary align-items">Agendar hora</a>
+                <div class="row h-100">
+                    <div class="col-md-6 d-flex flex-column justify-content-center left-section">
+                        <h2 class="text-white">Comprometidos con tu Bienestar...</h2>
+                        <p  id="texto-hero" class="text-white">Ekos se compromete a entregarte un trato humano y una atención de excelencia con profesionales dedicados sólo para tí.</p>
+                        <button id="btn-hero" type="button" class="btn btn-info">Agenda tu hora aquí</button>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center right-section">
+                        <!-- Right section content -->
+                    </div>
                 </div>
-                <div class="col-md-6 d-flex align-items-center justify-content-center right-section">
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
     </header>
 
     <main>
@@ -74,62 +82,189 @@
                 </div> -->
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card mb-4 rounded">
-                            <img src="assets/images/psicologia.jpg" class="card-img-top" alt="...">
+                        <div class="card mb-4 ">
+                            <img src="assets/images/icon1.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Medicina General</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies.</p>
+                                <h5 class="card-title text-center">Medicina General</h5>
+                                <p class="card-text">Servicios de atención primaria personalizados para tu bienestar, con prevención, diagnósticos y tratamientos efectivos.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="assets/images/nutricion.jpg" class="card-img-top" alt="...">
+                            <img src="assets/images/icon3.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Kinesiología</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies.</p>
+                                <h5 class="card-title text-center">Kinesiología</h5>
+                                <p class="card-text">Programas personalizados para mejorar la salud física, movilidad y aliviar el dolor mediante rehabilitación y bienestar.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="assets/images/nutricion.jpg" class="card-img-top" alt="...">
+                            <img src="assets/images/icon4.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Radiología</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies.</p>
+                                <h5 class="card-title text-center">Radiología</h5>
+                                <p class="card-text">Servicios avanzados de imagenología para diagnósticos precisos y planificación de tratamientos con tecnología de vanguardia.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="assets/images/psicologia.jpg" class="card-img-top" alt="...">
+                            <img src="assets/images/icon2.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Obstetricia</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies.</p>
+                                <h5 class="card-title text-center">Obstetricia</h5>
+                                <p class="card-text">Atención integral y compasiva para futuras madres, desde controles prenatales hasta el parto y el posparto.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="assets/images/nutricion.jpg" class="card-img-top" alt="...">
+                            <img src="assets/images/iconoFono.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Fonoaudiología</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies.</p>
+                                <h5 class="card-title text-center">Fonoaudiología</h5>
+                                <p class="card-text">Terapias especializadas para mejorar la comunicación y la salud auditiva, adaptadas a tus necesidades individuales.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="assets/images/nutricion.jpg" class="card-img-top" alt="...">
+                            <img src="assets/images/icon6.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Odontología</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies.</p>
+                                <h5 class="card-title  text-center">Odontología</h5>
+                                <p class="card-text">Servicios dentales profesionales enfocados en la salud oral y estética, utilizando las últimas técnicas y tecnologías.
+                                </p>
                                 <!-- <a href="#" class="btn btn-primary">Agendar hora</a> -->
                             </div>
                         </div>
                     </div>
         </section>
+        <!-- <section id="agendar" >
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center">Agendar hora</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" aria-describedby="nombreHelp">
+                                <div id="nombreHelp" class="form-text">Ingresa tu nombre completo.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Ingresa tu correo electrónico.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" aria-describedby="telefonoHelp">
+                                <div id="telefonoHelp" class="form-text">Ingresa tu número de teléfono.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="servicio" class="form-label">Servicio</label>
+                                <select class="form-select" id="servicio" aria-describedby="servicioHelp">
+                                    <option selected>Selecciona un servicio</option>
+                                    <option value="1">Medicina General</option>
+                                    <option value="2">Kinesiología</option>
+                                    <option value="3">Radiología</option>
+                                    <option value="4">Obstetricia</option>
+                                    <option value="5">Fonoaudiología</option>
+                                    <option value="6">Odontología</option>
+                                </select>
+                                <div id="servicioHelp" class="form-text">Selecciona el servicio que deseas agendar.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fecha" class="form-label">Fecha</label>
+                                <input type="date" class="
+                                form-control" id="fecha" aria-describedby="fechaHelp">
+                                <div id="fechaHelp" class="form-text">Selecciona la fecha en la que deseas agendar tu hora.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="hora" class="form-label">Hora</label>
+                                <input type="time" class="form-control" id="hora" aria-describedby="horaHelp">
+                                <div id="horaHelp" class="form-text">Selecciona la hora en la que deseas agendar tu hora.</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Agendar hora</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/images/agendar.png" class="img-fluid" alt="Agendar hora">
+                    </div>
+                </div>
+            </div>
 
+        </section> -->
+        <section id="ubicacion">
+            <div class="container py-5 ubicacion">
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <h2 class="text-center">Ubicación</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2685.9168433465506!2d-72.59648511830366!3d-38.7570913156911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d1d2f7ec4725%3A0xbaee159ffe7bdd0d!2sCentro%20m%C3%A9dico%20ekos!5e1!3m2!1sen!2scl!4v1730596293030!5m2!1sen!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Estamos ubicados en la comuna de Padre Las Casas. Nuestra dirección es Francisco Pleiteado 712, Oficina 201 - Piso 2.</p>
+                        <p>Contamos con estacionamiento gratuito para nuestros pacientes y estamos ubicados a pasos de la Biblioteca Municipal</p>
+                        <p>Si tienes alguna duda sobre cómo llegar a nuestra clínica, no dudes en contactarnos.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- <section id="contacto">
+            <div class="container py-5 ubicacion">
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <h2 class="text-center">Contacto</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2685.9168433465506!2d-72.59648511830366!3d-38.7570913156911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d1d2f7ec4725%3A0xbaee159ffe7bdd0d!2sCentro%20m%C3%A9dico%20ekos!5e1!3m2!1sen!2scl!4v1730596293030!5m2!1sen!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Estamos ubicados en la comuna de Padre Las Casas. Nuestra dirección es Francisco Pleiteado 712, Oficina 201 - Piso 2.</p>
+                        <p>Contamos con estacionamiento gratuito para nuestros pacientes y estamos ubicados a pasos de la Biblioteca Municipal</p>
+                        <p>Si tienes alguna duda sobre cómo llegar a nuestra clínica, no dudes en contactarnos.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="nosotros">
+            <div class="container py-5 ubicacion">
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <h2 class="text-center">Nosotros</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2685.9168433465506!2d-72.59648511830366!3d-38.7570913156911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d1d2f7ec4725%3A0xbaee159ffe7bdd0d!2sCentro%20m%C3%A9dico%20ekos!5e1!3m2!1sen!2scl!4v1730596293030!5m2!1sen!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Estamos ubicados en la comuna de Padre Las Casas. Nuestra dirección es Francisco Pleiteado 712, Oficina 201 - Piso 2.</p>
+                        <p>Contamos con estacionamiento gratuito para nuestros pacientes y estamos ubicados a pasos de la Biblioteca Municipal</p>
+                        <p>Si tienes alguna duda sobre cómo llegar a nuestra clínica, no dudes en contactarnos.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section> -->
     </main>
 
 

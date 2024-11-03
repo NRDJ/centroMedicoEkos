@@ -3,13 +3,15 @@
 /* rgb(27, 166, 189)  celeste mas claro, principal*/
 /* rgb(2, 150, 178) celeste mas oscuro, secundario */
 /* rgb(2, 99, 202) azul 
+/* rgb(2, 100, 201) azul 
 /* rgb(255, 255, 255) hsl(0, 0%, 100%) blanco */
+
 
 /* Variables de color */
 :root {
     --primary-color: rgb(27, 166, 189); /* Celeste claro */
     --secondary-color: rgb(2, 150, 178); /* Celeste oscuro */
-    --tertiary-color: rgb(2, 99, 202); /* Azul */
+    --tertiary-color: rgb(2, 100, 201); /* Azul */
     --complementary-color: rgb(77, 182, 172); /* Verde Agua */
     --complementary-color-2: rgb(0, 70, 112); /* Azul Marino */
     --font-color: #333; /* Gris oscuro */
@@ -35,7 +37,7 @@ nav {
 
 .navbar-nav .nav-link {
     position: relative; /* Add this line */
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     font-weight: bolder;
     transition: transform 0.3s ease;
 }
@@ -76,7 +78,7 @@ nav {
 
 .left-section {
     /* Additional styling for left section if needed */
-    background-color: var(--complementary-color);
+    background-color: var(--tertiary-color);
 }
 
 .right-section {
@@ -97,6 +99,79 @@ nav {
 
 .card {
     border-radius: 25px;
-    background-color: var(--complementary-color);
+    background-color: var(--tertiary-color);
     color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, background-color 0.5s ease;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.card:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    background-color: var(--secondary-color);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vh;/* Adjust the height as needed */
+    object-fit: contain;
+    margin-top: 1rem;
+    border: 1px solid #fff; /* Agrega un borde blanco de 5px */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra para mayor efecto */
+    background-color: white;
+}
+
+.ubicacion{
+    background-color:  var(--tertiary-color); /* Azul */
+    color: white;
+    padding: 1rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.embed-responsive .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+#texto-hero {
+    color: white;
+    font-size: 1.2rem;
+}
+
+#btn-hero {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra inicial */
+}
+
+#btn-hero:hover {
+    background-color: var(--complementary-color);
+    transform: scale(1.05) translateZ(10px); /* Aumenta el tamaño y mueve el botón hacia adelante */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
 }
